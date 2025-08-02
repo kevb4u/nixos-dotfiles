@@ -52,6 +52,7 @@
 
 #custom-reboot,
 #bluetooth,
+#custom-vpn,
 #battery,
 #pulseaudio,
 #backlight,
@@ -74,6 +75,7 @@
 /* 鼠标悬停变亮一点 */
 #bluetooth:hover,
 #network:hover,
+#custom-vpn:hover,
 /*#tray:hover,*/
 #backlight:hover,
 #battery:hover,

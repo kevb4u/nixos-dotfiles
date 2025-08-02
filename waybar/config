@@ -14,6 +14,7 @@
     "modules-center": ["hyprland/window"],
     "modules-right": [
         "network",
+        "custom/vpn",
         "battery",
         "bluetooth",
         "pulseaudio",
@@ -70,6 +71,14 @@
         "format-disconnected": "<span color='#FF4040'>  </span>Disconnected ",
         "format-alt": "<span color='#00FFFF'> 󰤨 </span>{signalStrength}% ",
         "interval": 1
+    },
+    "custom/vpn": {
+        // "exec": "sensors | awk '/^Package id 0:/ {print int($4)}'",
+        "format": "<span color='#28CD41'> [] </span>",
+        // "interval": 5,
+        "on-click": "expressvpn connect",
+        "tooltip": true,
+        "tooltip-format": "Vpn connected"
     },
     "battery": {
         "states": {
@@ -134,7 +143,7 @@
         "device": "intel_backlight",
         "format": "<span color='#FFD700'>{icon}</span>{percent}% ",
         "tooltip": true,
-        "tooltip-format": "当前屏幕亮度: {percent}%",
+        "tooltip-format": "Brightness: {percent}%",
         "format-icons": [
             "<span color='#696969'> 󰃞 </span>",  // 暗 - 深灰
             "<span color='#A9A9A9'> 󰃝 </span>",  // 中 - 灰
