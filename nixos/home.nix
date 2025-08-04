@@ -19,7 +19,6 @@
   };
 
   home.packages = with pkgs; [
-    bat
     discord
     obs-studio
     godot

@@ -16,20 +16,13 @@
     pyprland
     hyprpicker
     hyprcursor
-    hyprlock
-    hypridle
-    hyprpaper
+    # hyprlock
+    # hypridle
+    hyprpaper            # Wallpaper
 
     # inputs.wezterm.packages.${pkgs.system}.default
-    kitty
-    # cool-retro-term
-
-    # starship
-    # helix
+    kitty                # Terminal
 
     # qutebrowser
-    # zathura
-    # mpv
-    # imv
   ];
 }

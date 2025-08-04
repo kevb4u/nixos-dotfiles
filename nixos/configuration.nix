@@ -32,6 +32,7 @@
       ./screen.nix
       ./sound.nix
       ./usb.nix
+      ./system-packages.nix
       ./hyprland.nix
       ./users.nix
       ./gaming.nix
@@ -52,29 +53,6 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-  
-
-  programs.firefox.enable = true;
-  # programs.appimage.enable = true;
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
-  environment.systemPackages = with pkgs; [
-     vim # The Nano editor is also installed by default.
-     neovim
-     wget
-     btop
-     tree
-     lm_sensors # Temperaure check
-     git
-     fastfetch
-     wl-clipboard # copy
-     cliphist # Clipboard
-     kdePackages.dolphin # File Manager
-     kdePackages.kate # Text Editor
-     waybar # Taskbar
-     rofi-wayland # App Launcher
-     mpv # Video Player
-  ];
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
